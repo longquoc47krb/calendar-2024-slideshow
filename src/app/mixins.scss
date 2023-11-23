@@ -1,0 +1,11 @@
+$mobile: 576px;
+$tablet: 768px;
+$smallDesktop: 992px;
+$desktop: 1200px;
+
+// Mixin for mobile-first approach
+@mixin respond-to($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
